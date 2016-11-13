@@ -1,0 +1,12 @@
+<!-- extend from base layout -->
+  <h1>Present Matrix</h1>
+  <form action="" method="post" name="login">
+      {{ form.hidden_tag() }}
+      <p>
+          Please enter a list of names (comma seperated):<br>
+          {{ form.people }}<br>
+      </p>
+      Number of presents they should buy:
+      <p>{{ form.num_presents }}</p>
+      <p><input type="submit" value="Reticulate Splines"></p>
+  </form>

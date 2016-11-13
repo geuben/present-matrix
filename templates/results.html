@@ -1,0 +1,10 @@
+  <h1>Present Matrix</h1>
+  <table>
+      {% for key, value in results.iteritems() %}
+      <tr>
+          <td>{{ key }} buys for: {% for person in value %}{{ person }} {% endfor %}</td>
+
+      </tr>
+      {% endfor %}
+
+  </table>
